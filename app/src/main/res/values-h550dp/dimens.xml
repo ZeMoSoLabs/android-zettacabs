@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Height related dimension in portrait mode -->
+    <dimen name="splash_img_dimen">220dp</dimen>
+    <dimen name="splash_button_height">40dp</dimen>
+    <dimen name="splash_margin_top">50dp</dimen>
+    <dimen name="splash_title_sp">18sp</dimen>
+    <dimen name="splash_msg_sp">14sp</dimen>
+    <dimen name="splash_vertical_margin">15dp</dimen>
+    <dimen name="splash_round_button_height">51dp</dimen>
+    <dimen name="hire_screen_navbar">90dp</dimen>
+    <dimen name="hire_screen_navigation_type_select">70dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_login_text">#48A0DC</color>
+    <color name="blue_registered_email_button">#279CCC</color>
+    <color name="blue_splash_bg">#31C4FF</color>
+    <color name="grey_register_email_text">#33000000</color>
+    <color name="hire_navbar_bg">#31c4ff</color>
+    <color name="hire_navtype_select">#31c4ff</color>
+    <color name="message_in_map">#88131518</color>
+</resources>

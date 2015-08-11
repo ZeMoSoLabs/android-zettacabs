@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/blue_splash_bg" tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/splash_img_dimen"
+        android:layout_height="@dimen/splash_img_dimen"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="@dimen/splash_margin_top"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/featured_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msg_splash"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/title_splash"
+        android:textColor="@color/white"
+        android:text="@string/title_text_splash"
+        android:background="#00FFFFFF"
+        android:textSize="@dimen/splash_title_sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_email_button_id"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/msg_splash"
+        android:textColor="@color/white"
+        android:background="#00FFFFFF"
+        android:text="@string/msg_text_splash"
+        android:textSize="@dimen/splash_msg_sp"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="@dimen/splash_vertical_margin"
+        android:layout_height="@dimen/splash_round_button_height"
+        android:background="@drawable/semicircular_left_right_ends"
+        android:layout_above="@+id/login_button_id"
+        android:id="@+id/register_email_button_id">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:id="@+id/id_email_img"
+            android:src="@mipmap/icn_email"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_email_img"
+            android:layout_marginLeft="19dp"
+            android:layout_centerVertical="true"
+            android:hint="@string/email_text_splash"
+            android:textColor="@color/grey_register_email_text"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_id" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/login_button_text"
+        android:id="@+id/login_button_id"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/goto_zetarget_button"
+        android:background="@color/white"
+        android:textSize="12sp"
+        android:textColor="@color/blue_login_text"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/splash_button_height"
+        android:gravity="center"
+        android:text="@string/goto_zetarget_button_text"
+        android:id="@+id/goto_zetarget_button"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_rectangular_border"
+        android:textSize="12sp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
