@@ -31,10 +31,13 @@ import java.net.URL;
 public class SplashActivity extends Activity implements View.OnClickListener {
     static final String GCM_SENDER_ID ="914500168484";
     static final String ZETARGET_API_KEY = "d6e7225e-bf6c-4b34-885f-f4795e14b066";
+    private static final String MY_URL = "http://api.zetarget.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ZeTarget.setZeTargetURL(MY_URL);
         ZeTarget.initializeWithContextAndKey(getApplicationContext(), ZETARGET_API_KEY, GCM_SENDER_ID);
         setContentView(R.layout.activity_splash);
         SharedPreferences demoData = getSharedPreferences("DemoData",MODE_PRIVATE);
